@@ -1,0 +1,6 @@
+## Deuxième partie de l'introduction
+
+Texte dans la deuxième partie de l'introduction.
+
+À noter qu'il peut y avoir autant de fichier que nécessaire dans l'introduction.
+Pour les documents bookdown, il y aura une page par section (##).
