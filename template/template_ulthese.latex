@@ -221,8 +221,8 @@ $endfor$
 \phantomsection\addcontentsline{toc}{chapter}{Résumé} % inclure dans TdM
 
 \begin{otherlanguage*}{french}
-$if(abstract_fr)$
-$abstract_fr$
+$if(resume)$
+$resume$
 $endif$
 \end{otherlanguage*}
 
@@ -230,8 +230,8 @@ $endif$
 \phantomsection\addcontentsline{toc}{chapter}{Abstract}
 
 \begin{otherlanguage*}{english}
-$if(abstract_en)$
-$abstract_en$
+$if(abstract)$
+$abstract$
 $endif$
 \end{otherlanguage*}
 
@@ -255,14 +255,27 @@ $endif$
 \listoffigures                  % production de la liste des figures
 \cleardoublepage
 
-\dedicace{Dédicace si désiré}
+$if(dedicace)$
+\dedicace{$dedicace$}
 \cleardoublepage
+$endif$
 
-\epigraphe{Texte de l'épigraphe}{Source ou auteur}
+$if(epigraphe)$
+\epigraphe{$epigraphe.texte$}{$epigraphe.source$}
 \cleardoublepage
+$endif$
 
-\include{remerciements}         % remerciements
-\include{avantpropos}           % avant-propos
+\chapter*{Remerciements}         % ne pas numéroter
+\phantomsection\addcontentsline{toc}{chapter}{Remerciements} % inclure dans TdM
+$if(remerciements)$
+$remerciements$
+$endif$
+
+\chapter*{Avant-propos}         % ne pas numéroter
+\phantomsection\addcontentsline{toc}{chapter}{Avant-propos} % inclure dans TdM
+$if(avant-propos)$
+$avant-propos$
+$endif$
 
 \mainmatter                     % corps du document
 

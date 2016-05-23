@@ -1,12 +1,27 @@
 ---
+# Section à remplir
+abstract: |
+  Is this abstract enough?
+resume: |
+  Ça résume assez bien le tout.
+dedicace: |
+  Dédicace si désiré.
+epigraphe:
+  texte: |
+    Texte de l'épigraphe
+  source: |
+    Source ou auteur
+remerciements: |
+  Merci!
+avant-propos: |
+  L'avant-propos est surtout nécessaire pour une thèse par article.
+# Fin de la section à remplir
 documentclass: ulthese
 classoption: [PhD,english,french]
 geometry: false
 bibliography: [test.bib]
 biblio-style: apalike
 link-citations: yes
-abstract_en: "Is this abstract enough?"
-abstract_fr: Ça résume assez bien le tout.
 output:
   bookdown::gitbook:
     split_by: section
