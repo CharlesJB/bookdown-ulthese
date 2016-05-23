@@ -33,6 +33,7 @@ output:
         after: |
           <li><a href="https://github.com/rstudio/bookdown" target="blank">Publié avec bookdown</a></li>
   bookdown::pdf_book:
+    pandoc_args: --chapters
     template: template/template_ulthese.latex
     keep_tex: yes
     includes:
