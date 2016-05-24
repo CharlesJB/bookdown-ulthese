@@ -192,20 +192,37 @@ $for(header-includes)$
 $header-includes$
 $endfor$
 
-$if(title)$
-\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
+% ulthese
+%% Options de mise en forme du mode français de babel. Consulter la
+%% documentation du paquetage babel pour les options disponibles.
+%% Désactiver (effacer ou mettre en commentaire) si l'option
+%% 'nobabel' est spécifiée au chargement de la classe.
+\frenchbsetup{%
+  StandardItemizeEnv=true,       % format standard des listes
+  ThinSpaceInFrenchNumbers=true, % espace fine dans les nombres
+  og=«, fg=»                     % caractères « et » sont les
+  guillemets
+}
+
+
+%% Déclaration des pages de titre. Remplacer les éléments entre < >.
+%% Supprimer les caractères < >. Couper un long titre ou un long
+%% sous-titre manuellement avec \\.
+\titre{$titre$}
+% \titre{Ceci est un exemple de long titre \\
+%   avec saut de ligne manuel}
+% \soustitre{Sous-titre le cas échéant}
+% \soustitre{Ceci est un exemple de long sous-titre \\
+%   avec saut de ligne manuel}
+\auteur{$auteur$}
+\annee{$annee$}
+\programme{$programme$}
+\direction{$directeur$}
+$for(codirecteur)$
+$if(codirecteur.nom)$
+\codirection{$codirecteur.nom$}
 $endif$
-$if(subtitle)$
-\providecommand{\subtitle}[1]{}
-\subtitle{$subtitle$}
-$endif$
-$if(author)$
-\author{$for(author)$$author$$sep$ \and $endfor$}
-$endif$
-$if(institute)$
-\institute{$for(institute)$$institute$$sep$ \and $endfor$}
-$endif$
-\date{$date$}
+$endfor$
 
 \begin{document}
 

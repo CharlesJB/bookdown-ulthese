@@ -1,5 +1,15 @@
 ---
 # Section à remplir
+titre: Titre principal
+# sous-titre: Sous-titre le cas échéant
+auteur: Prénom Nom
+annee: 20XX
+programme: Doctorat en (discipline) <-- majeure, s'il y a lieu>
+directeur: Prénom Nom, (directeur ou directrice) de recherche
+codirecteur:
+- nom: Prénom Nom, (codirecteur ou codirectrice) de recherche
+#- nom: Prénom Nom, (codirecteur ou codirectrice) de recherche
+#- nom: Prénom Nom, (codirecteur ou codirectrice) de recherche
 abstract: |
   Is this abstract enough?
 resume: |
@@ -36,8 +46,6 @@ output:
     pandoc_args: --chapters
     template: template/template_ulthese.latex
     keep_tex: yes
-    includes:
-      in_header: preamble.tex
     citation_package: natbib
   bookdown::epub_book: default
   bookdown::html_chapters:
