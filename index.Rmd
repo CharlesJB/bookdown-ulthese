@@ -51,3 +51,9 @@ output:
   bookdown::html_chapters:
     css: toc.css
 ---
+
+# Introduction {-}
+
+Une thèse ou un mémoire devrait normalement débuter par une
+introduction. Celle-ci est traitée comme un chapitre normal, sauf
+qu'elle n'est pas numérotée.
