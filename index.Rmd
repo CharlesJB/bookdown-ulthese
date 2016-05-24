@@ -11,9 +11,9 @@ codirecteur:
 #- nom: Prénom Nom, (codirecteur ou codirectrice) de recherche
 #- nom: Prénom Nom, (codirecteur ou codirectrice) de recherche
 abstract: |
-  Is this abstract enough?
+  Texte du résumé en anglais
 resume: |
-  Ça résume assez bien le tout.
+  Texte du résumé en français
 dedicace: |
   Dédicace si désiré.
 epigraphe:
