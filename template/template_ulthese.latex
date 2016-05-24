@@ -205,7 +205,7 @@ $endfor$
 }
 
 \titre{$titre$}
-$if(sous-titre}$
+$if(sous-titre)$
 \soustitre{$sous-titre$}
 $endif$
 
