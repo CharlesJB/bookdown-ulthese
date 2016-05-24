@@ -1,10 +1,10 @@
-TARGET_PDF: _book/These.pdf
+TARGET_PDF=_book/These.pdf
 
 .PHONY: all pdf
 
 all: pdf
 
-pdf: 
+pdf: $(TARGET_PDF)
 	
 _book/These.pdf: template/template_ulthese.latex
 	Rscript --vanilla -e \
