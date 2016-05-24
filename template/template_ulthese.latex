@@ -204,16 +204,11 @@ $endfor$
   guillemets
 }
 
-
-%% Déclaration des pages de titre. Remplacer les éléments entre < >.
-%% Supprimer les caractères < >. Couper un long titre ou un long
-%% sous-titre manuellement avec \\.
 \titre{$titre$}
-% \titre{Ceci est un exemple de long titre \\
-%   avec saut de ligne manuel}
-% \soustitre{Sous-titre le cas échéant}
-% \soustitre{Ceci est un exemple de long sous-titre \\
-%   avec saut de ligne manuel}
+$if(sous-titre}$
+\soustitre{$sous-titre$}
+$endif$
+
 \auteur{$auteur$}
 \annee{$annee$}
 \programme{$programme$}
