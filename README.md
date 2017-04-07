@@ -23,12 +23,12 @@ https://bookdown.org/yihui/bookdown/
 Pour écrire de longue captions, se référer à ce lien:
 https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#text-references
 
-```r
+`r
 
 (ref:nom_figure_scap) Caption courte.
 (ref:nom_figure_cap) Caption longue.
 
-''````{r nom_figure, fig.align='center', fig.scap = (ref:nom_figure_scap), fig.cap = (ref:nom_figure_cap)}
+```{r nom_figure, fig.align='center', fig.scap = (ref:nom_figure_scap), fig.cap = (ref:nom_figure_cap)}
 knitr::include_graphics("ul_p.pdf")}
-''```
 ```
+`
